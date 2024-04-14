@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1E3D7E;
+    color: white;
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 30px;
+  }  
+  h1 {
+    margin: 0;
+  }
+
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  .container{
+    width: 85%; /* Ancho del contenedor, ajusta según lo necesites */
+    margin: 0 auto; /* Margen automático horizontal para centrar */
+    padding: 0 20px; /* Espacio de 20px en los lados derecho e izquierdo */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    
+  }
+.contenedor {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los bloques se envuelvan cuando no haya suficiente espacio */
+       justify-content: space-between; /* Distribuir los bloques a lo largo del contenedor */
+       max-width: 800px;
+       margin: 0 auto;
+       padding: 20px;
+       
+   }
+
+    .bloque {
+       width: 30%; /* Ajusta el ancho según tus necesidades */
+       margin-bottom: 20px; /* Espacio entre los bloques */
+       border: 1px solid #ccc;
+       padding: 10px;
+       box-sizing: border-box;
+       border-radius: 20px;
+       }
+
+    @media screen and (max-width: 768px) {
+   .bloque {
+   width: 45%; /* Cambia el ancho en pantallas más pequeñas */
+   }
+   }
+
+   @media screen and (max-width: 480px) {
+   .bloque {
+   width: 100%; /* Cambia el ancho a 100% en dispositivos muy pequeños */
+    }
+    }
+.imagen{
+    max-width: 100%;
+    height: auto;
+    display: block; /* Esto asegura que la imagen no tenga márgenes no deseados */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+
+  .contactos{
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no haya suficiente espacio */
+  }
+  
+  img {
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    margin-left: 40px;
+    max-width: 100%; /* La imagen no excede el ancho del contenedor */
+    height: 300px;
+  }
+  
+  p {
+    flex: 1; /* El texto ocupa el espacio restante */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contenedor {
+      flex-direction: column; /* Cambia la dirección del flexbox a columna en dispositivos pequeños */
+      text-align: center; /* Centra el texto en dispositivos pequeños */
+    }
+  
+    img {
+      margin-right: 0; /* Elimina el margen entre la imagen y el texto */
+      margin-bottom: 10px; /* Agrega espacio entre la imagen y el texto en dispositivos pequeños */
+    }
+  }
+
+  
+  .campo {
+    margin-bottom: 20px;
+    
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+
+  a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+  @media screen and (max-width: 600px) {
+    li {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+  iframe {
+    width: 100%;
+    height: 400px;
+    padding:  10px;
+    box-sizing: border-box;
+
+}
